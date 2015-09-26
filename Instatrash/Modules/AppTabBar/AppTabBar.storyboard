@@ -4,6 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--Posts-->
+        <scene sceneID="IOO-37-Sn9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Posts" id="7QW-rX-xq7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="w6u-lV-5Sp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alp-7d-ROo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.5" y="747"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GZU-eR-Xpb">
             <objects>
@@ -13,6 +23,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="7QW-rX-xq7" kind="relationship" relationship="viewControllers" id="ebh-Jh-bs9"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFl-sz-CPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
