@@ -5,10 +5,10 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Posts View Controller-->
+        <!--Timeline-->
         <scene sceneID="rA3-Zl-Hr1">
             <objects>
-                <viewController id="Lls-cN-8xC" customClass="PostsViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Timeline" id="Lls-cN-8xC" customClass="TimelineViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uQj-4u-qof"/>
                         <viewControllerLayoutGuide type="bottom" id="w3L-8J-0zC"/>

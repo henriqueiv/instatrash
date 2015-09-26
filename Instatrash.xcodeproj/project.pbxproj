@@ -11,7 +11,7 @@
 		3DF7A5F21BB679F100720B9C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F11BB679F100720B9C /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
 		3DF7A5F51BB67AB100720B9C /* AppTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F41BB67AB100720B9C /* AppTabBar.storyboard */; settings = {ASSET_TAGS = (); }; };
 		3DF7A5F81BB67BCE00720B9C /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F71BB67BCE00720B9C /* Timeline.storyboard */; settings = {ASSET_TAGS = (); }; };
-		3DF7A5FA1BB67BF900720B9C /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F91BB67BF900720B9C /* PostsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3DF7A5FA1BB67BF900720B9C /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5F91BB67BF900720B9C /* TimelineViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3DF7A5FC1BB6826500720B9C /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5FB1BB6826500720B9C /* TimelinePresenter.swift */; settings = {ASSET_TAGS = (); }; };
 		3DF7A5FE1BB68A2D00720B9C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF7A5FD1BB68A2D00720B9C /* PostTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		623F23801BB670E6004AE915 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 623F237F1BB670E6004AE915 /* Podfile */; settings = {ASSET_TAGS = (); }; };
@@ -54,7 +54,7 @@
 		3DF7A5F11BB679F100720B9C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3DF7A5F41BB67AB100720B9C /* AppTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppTabBar.storyboard; sourceTree = "<group>"; };
 		3DF7A5F71BB67BCE00720B9C /* Timeline.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
-		3DF7A5F91BB67BF900720B9C /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		3DF7A5F91BB67BF900720B9C /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		3DF7A5FB1BB6826500720B9C /* TimelinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
 		3DF7A5FD1BB68A2D00720B9C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		42378F5201C3BD90AE10116F /* Pods-Instatrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instatrash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				3DF7A5F71BB67BCE00720B9C /* Timeline.storyboard */,
-				3DF7A5F91BB67BF900720B9C /* PostsViewController.swift */,
+				3DF7A5F91BB67BF900720B9C /* TimelineViewController.swift */,
 				3DF7A5FB1BB6826500720B9C /* TimelinePresenter.swift */,
 				3DF7A5FD1BB68A2D00720B9C /* PostTableViewCell.swift */,
 			);
@@ -460,7 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DF7A5FC1BB6826500720B9C /* TimelinePresenter.swift in Sources */,
-				3DF7A5FA1BB67BF900720B9C /* PostsViewController.swift in Sources */,
+				3DF7A5FA1BB67BF900720B9C /* TimelineViewController.swift in Sources */,
 				3DF7A5FE1BB68A2D00720B9C /* PostTableViewCell.swift in Sources */,
 				6272B1B71BB683BA00C2624B /* InstatrashAPI.swift in Sources */,
 				6272B1BA1BB683FB00C2624B /* PostViewController.swift in Sources */,
