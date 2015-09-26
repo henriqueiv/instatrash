@@ -3,7 +3,12 @@
 use_frameworks!
 
 target 'Instatrash' do
+	# pod 'Facebook-iOS-SDK'
 	pod 'Parse'
+	# pod 'ParseFacebookUtils'
+	pod 'ParseFacebookUtilsV4'
+	pod 'FBSDKCoreKit'
+	pod 'SVProgressHUD'
 end
 
 target 'InstatrashTests' do

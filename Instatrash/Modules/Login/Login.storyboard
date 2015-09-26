@@ -10,7 +10,7 @@
                 <viewControllerPlaceholder storyboardName="AppTabBar" id="UoZ-Fi-O0C" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8X-q7-kOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="75"/>
+            <point key="canvasLocation" x="778.5" y="466"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -28,6 +28,7 @@
                                 <rect key="frame" x="281" y="285" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="loginWithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Giz-pN-1mN"/>
                                     <segue destination="UoZ-Fi-O0C" kind="presentation" id="bC0-jH-EWG"/>
                                 </connections>
                             </button>

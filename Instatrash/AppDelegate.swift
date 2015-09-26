@@ -9,6 +9,8 @@
 import UIKit
 import Parse
 import Bolts
+import FBSDKCoreKit
+import ParseFacebookUtilsV4
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,13 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let kParseClientKey = "0UU7Eds0dzATUR7hqtkw5fRkk6PhwRTtYUXvomTA"
     
     func configureParse(launchOptions: [NSObject: AnyObject]?){
-        Parse.enableLocalDatastore()
-        Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey)
-        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (success: Bool, error: NSError?) -> Void in
-            if error != nil{
-                print(error?.description)
-            }
-        })
     }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -40,6 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configureParsePushForApplication(application, withFinishLaunchingWithOptions: options)
         Parse.enableLocalDatastore()
         Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey)
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(options)
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(options, block: { (success: Bool, error: NSError?) -> Void in
+            if error != nil{
+                print(error?.description)
+            }
+        })
     }
     
     func configureParseRegisterSublasses(){
@@ -78,6 +79,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application.registerForRemoteNotificationTypes(types)
         }
     }
+}
+
+//MARK: - Facebook
+extension AppDelegate {
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+    //Make sure it isn't already declared in the app delegate (possible redefinition of func error)
+    func applicationDidBecomeActive(application: UIApplication) {
+        FBSDKAppEvents.activateApp()
+    }
+    
 }
 
 //MARK: - Push Notifications

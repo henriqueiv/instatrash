@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MDR-Th-gex">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xkg-9E-Yez">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Post-->
@@ -16,25 +17,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAv-4O-tKp">
-                                <rect key="frame" x="285" y="261" width="31" height="30"/>
-                                <state key="normal" title="Post"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageTest" translatesAutoresizingMaskIntoConstraints="NO" id="Jjr-51-3h0">
+                                <rect key="frame" x="0.0" y="64" width="600" height="293"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-HL-wxr">
+                                <rect key="frame" x="0.0" y="373" width="600" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="ytd-GX-eKm"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFm-sN-t5b">
+                                <rect key="frame" x="277" y="327" width="47" height="30"/>
+                                <state key="normal" title="Retake"/>
                                 <connections>
-                                    <action selector="post:" destination="MDR-Th-gex" eventType="touchUpInside" id="dAi-dr-OM6"/>
+                                    <action selector="retakePhoto:" destination="MDR-Th-gex" eventType="touchUpInside" id="MY3-h6-51o"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vAv-4O-tKp" firstAttribute="centerY" secondItem="7ic-0m-FS8" secondAttribute="centerY" id="R2e-rF-GrX"/>
-                            <constraint firstItem="vAv-4O-tKp" firstAttribute="centerX" secondItem="7ic-0m-FS8" secondAttribute="centerX" id="z7S-7f-p7J"/>
+                            <constraint firstItem="xFm-sN-t5b" firstAttribute="bottom" secondItem="Jjr-51-3h0" secondAttribute="bottom" id="39N-vY-k46"/>
+                            <constraint firstItem="Jjr-51-3h0" firstAttribute="top" secondItem="d55-Cq-BE6" secondAttribute="bottom" id="6b9-9r-Gd0"/>
+                            <constraint firstItem="Qzo-uO-dFy" firstAttribute="top" secondItem="8Rl-HL-wxr" secondAttribute="bottom" constant="20" id="Mbi-IF-dmW"/>
+                            <constraint firstItem="xFm-sN-t5b" firstAttribute="centerX" secondItem="Jjr-51-3h0" secondAttribute="centerX" id="SYg-je-3zJ"/>
+                            <constraint firstItem="8Rl-HL-wxr" firstAttribute="leading" secondItem="7ic-0m-FS8" secondAttribute="leadingMargin" constant="-20" id="VKR-be-suS"/>
+                            <constraint firstItem="8Rl-HL-wxr" firstAttribute="top" secondItem="Jjr-51-3h0" secondAttribute="bottom" constant="16" id="ZwS-j6-dag"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Rl-HL-wxr" secondAttribute="trailing" constant="-20" id="qy6-N3-FHa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jjr-51-3h0" secondAttribute="trailing" constant="-20" id="rOF-fT-ddQ"/>
+                            <constraint firstItem="Jjr-51-3h0" firstAttribute="leading" secondItem="7ic-0m-FS8" secondAttribute="leadingMargin" constant="-20" id="vSR-nd-Wv2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Share to" id="M1t-gh-Z2y">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cvR-GB-s6T">
+                            <connections>
+                                <segue destination="RZh-Yq-XVa" kind="unwind" unwindAction="unwindToThisViewController:" id="oZc-CA-3Va"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="TWQ-ci-yht">
+                            <connections>
+                                <action selector="post:" destination="MDR-Th-gex" id="vqK-aN-gPn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="Jjr-51-3h0" id="9uY-He-PZb"/>
+                        <outlet property="retakeButton" destination="xFm-sN-t5b" id="Bi6-Tb-Lsw"/>
+                        <outlet property="textView" destination="8Rl-HL-wxr" id="5Cq-G2-Mob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN1-N9-PRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RZh-Yq-XVa" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Duq-2n-VP3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xkg-9E-Yez" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nmi-ag-hPy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MDR-Th-gex" kind="relationship" relationship="rootViewController" id="3AE-PV-FM6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYU-Un-iUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="856" y="29"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imageTest" width="620" height="573"/>
+    </resources>
 </document>

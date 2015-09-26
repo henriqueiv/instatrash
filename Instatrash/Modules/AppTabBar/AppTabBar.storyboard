@@ -12,12 +12,12 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alp-7d-ROo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265.5" y="747"/>
+            <point key="canvasLocation" x="-24" y="808"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--App Tab Bar View Controller-->
         <scene sceneID="GZU-eR-Xpb">
             <objects>
-                <tabBarController id="giG-KJ-xgp" sceneMemberID="viewController">
+                <tabBarController id="giG-KJ-xgp" customClass="AppTabBarViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7MB-4R-YKe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,13 +25,41 @@
                     </tabBar>
                     <connections>
                         <segue destination="7QW-rX-xq7" kind="relationship" relationship="viewControllers" id="ebh-Jh-bs9"/>
-                        <segue destination="4og-Zq-AmG" kind="relationship" relationship="viewControllers" id="E1r-fX-Hbe"/>
                         <segue destination="a6B-dz-7oQ" kind="relationship" relationship="viewControllers" id="Rxm-Le-0Pr"/>
+                        <segue destination="l1n-Hy-T0T" kind="presentation" identifier="Post" id="pBC-2k-Rh3"/>
+                        <segue destination="i0r-Da-zQ3" kind="relationship" relationship="viewControllers" id="0cQ-GU-jiK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFl-sz-CPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96" y="346"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Rye-0Y-WNW">
+            <objects>
+                <viewController storyboardIdentifier="post" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i0r-Da-zQ3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GCg-h0-Z6P"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uye-kU-gUN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4VJ-Gg-GfS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CeV-0C-0pw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVH-6v-dbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="1050"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="DZL-gE-6jd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Post" id="l1n-Hy-T0T" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tyh-JD-xRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="808"/>
         </scene>
         <!--Profile-->
         <scene sceneID="TPE-U8-IuN">
@@ -41,17 +69,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G49-JU-Eot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96" y="856"/>
-        </scene>
-        <!--Post-->
-        <scene sceneID="99T-zO-6ZQ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Post" id="4og-Zq-AmG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Post" id="ybZ-3O-8VY"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HdP-hl-THR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="278" y="731"/>
+            <point key="canvasLocation" x="96" y="808"/>
         </scene>
     </scenes>
 </document>
