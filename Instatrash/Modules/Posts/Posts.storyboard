@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="w3L-8J-0zC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UZP-P4-SSR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-Rc-Dir" userLabel="Empty state view">
@@ -104,7 +104,7 @@
                     </tableViewCellContentView>
                 </tableViewCell>
             </objects>
-            <point key="canvasLocation" x="86" y="418"/>
+            <point key="canvasLocation" x="203" y="347"/>
         </scene>
     </scenes>
 </document>
