@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56FE7B38DE06974BF053B3BD /* libPods-Instatrash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C655616ED599376615051BAB /* libPods-Instatrash.a */; };
 		6299CA2D1BB66E1B0014291D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299CA2C1BB66E1B0014291D /* AppDelegate.swift */; };
 		6299CA2F1BB66E1B0014291D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299CA2E1BB66E1B0014291D /* ViewController.swift */; };
 		6299CA321BB66E1B0014291D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6299CA301BB66E1B0014291D /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42378F5201C3BD90AE10116F /* Pods-Instatrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instatrash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash.debug.xcconfig"; sourceTree = "<group>"; };
+		5E96AE4F230AB3AC8EAD7AEC /* Pods-Instatrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instatrash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash.release.xcconfig"; sourceTree = "<group>"; };
 		6299CA291BB66E1B0014291D /* Instatrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instatrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299CA2C1BB66E1B0014291D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6299CA2E1BB66E1B0014291D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		6299CA481BB66E1B0014291D /* InstatrashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstatrashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299CA4C1BB66E1B0014291D /* InstatrashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstatrashUITests.swift; sourceTree = "<group>"; };
 		6299CA4E1BB66E1B0014291D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C655616ED599376615051BAB /* libPods-Instatrash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instatrash.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FE7B38DE06974BF053B3BD /* libPods-Instatrash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				6299CA401BB66E1B0014291D /* InstatrashTests */,
 				6299CA4B1BB66E1B0014291D /* InstatrashUITests */,
 				6299CA2A1BB66E1B0014291D /* Products */,
+				826A84020C4718BED2C80458 /* Pods */,
+				E07D4A4C9B5E8B1D4AC68E12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = InstatrashUITests;
 			sourceTree = "<group>";
 		};
+		826A84020C4718BED2C80458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42378F5201C3BD90AE10116F /* Pods-Instatrash.debug.xcconfig */,
+				5E96AE4F230AB3AC8EAD7AEC /* Pods-Instatrash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E07D4A4C9B5E8B1D4AC68E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C655616ED599376615051BAB /* libPods-Instatrash.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6299CA511BB66E1B0014291D /* Build configuration list for PBXNativeTarget "Instatrash" */;
 			buildPhases = (
+				1BE3A9DBA3F9BB077C05CB0C /* Check Pods Manifest.lock */,
 				6299CA251BB66E1B0014291D /* Sources */,
 				6299CA261BB66E1B0014291D /* Frameworks */,
 				6299CA271BB66E1B0014291D /* Resources */,
+				0C6A0B39BD8EC187EF7A5BE2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +275,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C6A0B39BD8EC187EF7A5BE2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BE3A9DBA3F9BB077C05CB0C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6299CA251BB66E1B0014291D /* Sources */ = {
@@ -396,6 +455,7 @@
 		};
 		6299CA521BB66E1B0014291D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42378F5201C3BD90AE10116F /* Pods-Instatrash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instatrash/Info.plist;
@@ -407,6 +467,7 @@
 		};
 		6299CA531BB66E1B0014291D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E96AE4F230AB3AC8EAD7AEC /* Pods-Instatrash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Instatrash/Info.plist;
@@ -483,6 +544,7 @@
 				6299CA531BB66E1B0014291D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6299CA541BB66E1B0014291D /* Build configuration list for PBXNativeTarget "InstatrashTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +553,7 @@
 				6299CA561BB66E1B0014291D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6299CA571BB66E1B0014291D /* Build configuration list for PBXNativeTarget "InstatrashUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +562,7 @@
 				6299CA591BB66E1B0014291D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

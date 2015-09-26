@@ -7,12 +7,25 @@
 //
 
 import UIKit
+//import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let kParseApplicationID = "Vhefw957qbGgxs49ydiuzWt7vWw4llegv3MLF7SR"
+    let kParseClientKey = "0UU7Eds0dzATUR7hqtkw5fRkk6PhwRTtYUXvomTA"
+    
+    func configureParse(launchOptions: [NSObject: AnyObject]?){
+        Parse.enableLocalDatastore()
+        Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey)
+        PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (success: Bool, error: NSError?) -> Void in
+            if error != nil{
+                println(error?.description)
+            }
+        })
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
