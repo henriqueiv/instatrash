@@ -8,11 +8,12 @@
 
 import UIKit
 
-class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TimelinePresenterDelegate {
+class TimelineViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var emptyStateView: UIView!
-    let CellReuseIdentifier = "Cell"
+    let CellReuseIdentifier = "PostTableViewCell"
+    let HeaderReuseIdentifier = "PostTableViewCell"
     var presenter: TimelinePresenter?
     
     override func viewDidLoad() {
@@ -39,7 +40,8 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func setupTableView() {
-        tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: CellReuseIdentifier)
+        tableView.registerNib(UINib(nibName: String(PostTableViewCell), bundle: nil), forCellReuseIdentifier: CellReuseIdentifier)
+        tableView.registerNib(UINib(nibName: String(TimelineTableSectionHeader), bundle: nil), forHeaderFooterViewReuseIdentifier: HeaderReuseIdentifier)
         tableView.tableFooterView = UIView()
     }
     
@@ -65,20 +67,20 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    // MARK: UITableViewDataSource
+}
+
+extension TimelineViewController : UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         if let presenter = self.presenter {
-            return presenter.numberOfPostTypes()
+            return presenter.numberOfUsers()
         }
         return 0
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let type = PostType(rawValue: section) {
-            if let presenter = self.presenter {
-                return presenter.numberOfPostsOfType(type)
-            }
+        if let presenter = self.presenter {
+            return presenter.numberOfPostsOfUser(section)
         }
         return 0
     }
@@ -89,7 +91,30 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-    // MARK: PostsPresenterDelegate
+}
+
+extension TimelineViewController : UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 260
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        var header = tableView.dequeueReusableHeaderFooterViewWithIdentifier(HeaderReuseIdentifier) as! TimelineTableSectionHeader
+        
+        return header
+        
+    }
+    
+}
+
+extension TimelineViewController : TimelinePresenterDelegate {
+    
     func presenterFinishedLoadingData(numberOfPosts: Int) {
         refreshViewState()
     }
