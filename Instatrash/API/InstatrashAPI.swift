@@ -16,13 +16,7 @@ class InstatrashAPI {
     
     func createPost(post:Post, withBlock block:PFBooleanResultBlock){
         post.saveInBackgroundWithBlock { (sucSaveModel:Bool, errorSaveModel:NSError?) -> Void in
-            if errorSaveModel == nil{
-                post.image.saveInBackgroundWithBlock({ (sucSaveImage:Bool, errorSaveImage:NSError?) -> Void in
-                    block(sucSaveImage, errorSaveImage)
-                })
-            }else{
-                block(sucSaveModel, errorSaveModel)
-            }
+            block(sucSaveModel, errorSaveModel)
         }
     }
     

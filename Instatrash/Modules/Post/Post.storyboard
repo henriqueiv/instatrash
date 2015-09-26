@@ -31,9 +31,6 @@
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-                    <connections>
-                        <outlet property="post" destination="vAv-4O-tKp" id="cjY-ip-c1u"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN1-N9-PRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
