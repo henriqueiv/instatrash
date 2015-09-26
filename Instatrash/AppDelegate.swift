@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey)
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: { (success: Bool, error: NSError?) -> Void in
             if error != nil{
-                println(error?.description)
+                print(error?.description)
             }
         })
     }
