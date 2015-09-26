@@ -12,44 +12,45 @@ protocol TimelinePresenterDelegate {
     func presenterFinishedLoadingData(numberOfPosts: Int)
 }
 
-enum PostType: Int {
-    case Normal
-}
-
 class TimelinePresenter {
     
-    var postList: [PostType:[AnyObject]] = [PostType:[AnyObject]]()
+    var usersPost: [Int:[AnyObject]] = [Int:[AnyObject]]()
     var delegate: TimelinePresenterDelegate?
     
     // MARK: Public
     
     func totalNumberOfPosts() -> Int {
-        var total = 0
-        for (_,postsOfType) in postList {
-            total += postsOfType.count
-        }
-        return total
+        return usersPost.count
     }
     
     func loadPosts() {
-        postList[PostType.Normal] = [AnyObject]()
+        
+        usersPost[0] = ["Post"]
+        usersPost[1] = ["Post"]
+        usersPost[2] = ["Post"]
+        usersPost[3] = ["Post"]
+        usersPost[4] = ["Post"]
+        usersPost[5] = ["Post"]
+        usersPost[6] = ["Post"]
+        usersPost[7] = ["Post"]
+        
         notifyDelegateFinishedLoadingData()
     }
     
-    func numberOfPostTypes() -> Int {
-        return postList.count
+    func numberOfUsers() -> Int {
+        return usersPost.count
     }
     
-    func numberOfPostsOfType(type: PostType) -> Int {
-        if let postsOfType = postList[type] {
-            return postsOfType.count
+    func numberOfPostsOfUser(userIndex: Int) -> Int {
+        if let posts = usersPost[userIndex] {
+            return posts.count
         }
         return 0
     }
     
-    func post(type: PostType, index: Int) -> AnyObject? {
-        if let postsOfType = postList[type] {
-            return postsOfType[index]
+    func post(userIndex: Int, index: Int) -> AnyObject? {
+        if let posts = usersPost[userIndex] {
+            return posts[index]
         }
         return nil
     }
