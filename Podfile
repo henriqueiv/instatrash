@@ -4,8 +4,6 @@ use_frameworks!
 
 target 'Instatrash' do
 	pod 'Parse'
-	pod 'FBSDKCoreKit'
-	pod 'FBSDKLoginKit'
 end
 
 target 'InstatrashTests' do
