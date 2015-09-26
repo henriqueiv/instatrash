@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MDR-Th-gex">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Post View Controller-->
+        <scene sceneID="JPb-e5-50D">
+            <objects>
+                <viewController id="MDR-Th-gex" customClass="PostViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d55-Cq-BE6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qzo-uO-dFy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ic-0m-FS8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAv-4O-tKp">
+                                <rect key="frame" x="285" y="261" width="31" height="30"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="post:" destination="MDR-Th-gex" eventType="touchUpInside" id="dAi-dr-OM6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vAv-4O-tKp" firstAttribute="centerY" secondItem="7ic-0m-FS8" secondAttribute="centerY" id="R2e-rF-GrX"/>
+                            <constraint firstItem="vAv-4O-tKp" firstAttribute="centerX" secondItem="7ic-0m-FS8" secondAttribute="centerX" id="z7S-7f-p7J"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="post" destination="vAv-4O-tKp" id="cjY-ip-c1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN1-N9-PRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="29"/>
+        </scene>
+    </scenes>
+</document>

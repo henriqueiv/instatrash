@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="w3L-8J-0zC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UZP-P4-SSR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ftD-mP-Qra">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -30,10 +30,11 @@
                             <constraint firstItem="ftD-mP-Qra" firstAttribute="top" secondItem="uQj-4u-qof" secondAttribute="bottom" constant="-20" id="diu-mk-ah2"/>
                         </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gyc-Zp-stD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86" y="418"/>
+            <point key="canvasLocation" x="203" y="347"/>
         </scene>
     </scenes>
 </document>
