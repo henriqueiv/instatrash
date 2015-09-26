@@ -65,4 +65,14 @@ class InstatrashAPI {
         }
     }
     
+    func numberOfLikesForPost(post:Post, withBlock block:PFIntegerResultBlock){
+        if let query = Like.query(){
+            query.whereKey("post", equalTo: post)
+            query.countObjectsInBackgroundWithBlock({ (val:Int32, error:NSError?) -> Void in
+                block(val, error)
+            })
+        }
+        
+    }
+    
 }
