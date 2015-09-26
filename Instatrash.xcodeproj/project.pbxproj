@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56FE7B38DE06974BF053B3BD /* libPods-Instatrash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C655616ED599376615051BAB /* libPods-Instatrash.a */; };
+		623F23801BB670E6004AE915 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 623F237F1BB670E6004AE915 /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		6299CA2D1BB66E1B0014291D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299CA2C1BB66E1B0014291D /* AppDelegate.swift */; };
 		6299CA2F1BB66E1B0014291D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299CA2E1BB66E1B0014291D /* ViewController.swift */; };
 		6299CA321BB66E1B0014291D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6299CA301BB66E1B0014291D /* Main.storyboard */; };
@@ -15,6 +15,7 @@
 		6299CA371BB66E1B0014291D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6299CA351BB66E1B0014291D /* LaunchScreen.storyboard */; };
 		6299CA421BB66E1B0014291D /* InstatrashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299CA411BB66E1B0014291D /* InstatrashTests.swift */; };
 		6299CA4D1BB66E1B0014291D /* InstatrashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6299CA4C1BB66E1B0014291D /* InstatrashUITests.swift */; };
+		D93B6756AED7F298560FEA57 /* Pods_Instatrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA411720155ACB97CDC5CFB /* Pods_Instatrash.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +36,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA411720155ACB97CDC5CFB /* Pods_Instatrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instatrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42378F5201C3BD90AE10116F /* Pods-Instatrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instatrash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash.debug.xcconfig"; sourceTree = "<group>"; };
 		5E96AE4F230AB3AC8EAD7AEC /* Pods-Instatrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instatrash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash.release.xcconfig"; sourceTree = "<group>"; };
+		623F237F1BB670E6004AE915 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		6299CA291BB66E1B0014291D /* Instatrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instatrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299CA2C1BB66E1B0014291D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6299CA2E1BB66E1B0014291D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6299CA311BB66E1B0014291D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6299CA331BB66E1B0014291D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6299CA331BB66E1B0014291D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Instatrash/Assets.xcassets; sourceTree = "<group>"; };
 		6299CA361BB66E1B0014291D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6299CA381BB66E1B0014291D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6299CA381BB66E1B0014291D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Instatrash/Info.plist; sourceTree = "<group>"; };
 		6299CA3D1BB66E1B0014291D /* InstatrashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstatrashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299CA411BB66E1B0014291D /* InstatrashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstatrashTests.swift; sourceTree = "<group>"; };
 		6299CA431BB66E1B0014291D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6299CA481BB66E1B0014291D /* InstatrashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstatrashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299CA4C1BB66E1B0014291D /* InstatrashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstatrashUITests.swift; sourceTree = "<group>"; };
 		6299CA4E1BB66E1B0014291D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C655616ED599376615051BAB /* libPods-Instatrash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Instatrash.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56FE7B38DE06974BF053B3BD /* libPods-Instatrash.a in Frameworks */,
+				D93B6756AED7F298560FEA57 /* Pods_Instatrash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623F237E1BB670D5004AE915 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6299CA331BB66E1B0014291D /* Assets.xcassets */,
+				623F237F1BB670E6004AE915 /* Podfile */,
+				6299CA381BB66E1B0014291D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6299CA201BB66E1B0014291D = {
 			isa = PBXGroup;
 			children = (
+				623F237E1BB670D5004AE915 /* Supporting Files */,
 				6299CA2B1BB66E1B0014291D /* Instatrash */,
 				6299CA401BB66E1B0014291D /* InstatrashTests */,
 				6299CA4B1BB66E1B0014291D /* InstatrashUITests */,
@@ -107,9 +120,7 @@
 				6299CA2C1BB66E1B0014291D /* AppDelegate.swift */,
 				6299CA2E1BB66E1B0014291D /* ViewController.swift */,
 				6299CA301BB66E1B0014291D /* Main.storyboard */,
-				6299CA331BB66E1B0014291D /* Assets.xcassets */,
 				6299CA351BB66E1B0014291D /* LaunchScreen.storyboard */,
-				6299CA381BB66E1B0014291D /* Info.plist */,
 			);
 			path = Instatrash;
 			sourceTree = "<group>";
@@ -144,7 +155,7 @@
 		E07D4A4C9B5E8B1D4AC68E12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C655616ED599376615051BAB /* libPods-Instatrash.a */,
+				0EA411720155ACB97CDC5CFB /* Pods_Instatrash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 				6299CA261BB66E1B0014291D /* Frameworks */,
 				6299CA271BB66E1B0014291D /* Resources */,
 				0C6A0B39BD8EC187EF7A5BE2 /* Copy Pods Resources */,
+				B56FBFD237B1A2A74A9E72AE /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +268,7 @@
 			files = (
 				6299CA371BB66E1B0014291D /* LaunchScreen.storyboard in Resources */,
 				6299CA341BB66E1B0014291D /* Assets.xcassets in Resources */,
+				623F23801BB670E6004AE915 /* Podfile in Resources */,
 				6299CA321BB66E1B0014291D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +318,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B56FBFD237B1A2A74A9E72AE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Instatrash/Pods-Instatrash-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
