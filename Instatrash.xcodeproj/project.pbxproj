@@ -64,10 +64,10 @@
 		6272B1B11BB680CF00C2624B /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		6272B1B21BB680CF00C2624B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6272B1B61BB683BA00C2624B /* InstatrashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstatrashAPI.swift; path = API/InstatrashAPI.swift; sourceTree = "<group>"; };
-		6272B1B91BB683FB00C2624B /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = Post/PostViewController.swift; sourceTree = "<group>"; };
-		6272B1BB1BB6866200C2624B /* Post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Post.storyboard; path = Post/Post.storyboard; sourceTree = "<group>"; };
-		6272B1BE1BB68B6F00C2624B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = Profile/Profile.storyboard; sourceTree = "<group>"; };
-		6272B1C01BB68B9D00C2624B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Profile/ProfileViewController.swift; sourceTree = "<group>"; };
+		6272B1B91BB683FB00C2624B /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		6272B1BB1BB6866200C2624B /* Post.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		6272B1BE1BB68B6F00C2624B /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		6272B1C01BB68B9D00C2624B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6299CA291BB66E1B0014291D /* Instatrash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instatrash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6299CA2C1BB66E1B0014291D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6299CA331BB66E1B0014291D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Instatrash/Assets.xcassets; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 				6272B1B91BB683FB00C2624B /* PostViewController.swift */,
 				6272B1BB1BB6866200C2624B /* Post.storyboard */,
 			);
-			name = Post;
+			path = Post;
 			sourceTree = "<group>";
 		};
 		6272B1BD1BB68B5E00C2624B /* Profile */ = {
@@ -198,7 +198,7 @@
 				6272B1BE1BB68B6F00C2624B /* Profile.storyboard */,
 				6272B1C01BB68B9D00C2624B /* ProfileViewController.swift */,
 			);
-			name = Profile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		6299CA201BB66E1B0014291D = {
