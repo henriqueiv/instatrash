@@ -72,7 +72,6 @@ class InstatrashAPI {
                 block(val, error)
             })
         }
-        
     }
     
 }
