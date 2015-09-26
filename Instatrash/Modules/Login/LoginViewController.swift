@@ -25,31 +25,50 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginWithFacebook(sender: AnyObject) {
-//        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Gradient)
-//        SVProgressHUD.showWithStatus("Entrando...")
-//        let facebookPermissions = ["email", "public_profile", "user_friends"];
-//        PFFacebookUtils.logInInBackgroundWithReadPermissions(facebookPermissions) { (user: PFUser?, error: NSError?) -> Void in
-//            if let user = user {
-//                if user.isNew {
-//                    print("User signed up and logged in through Facebook!")
-//                } else {
-//                    print("User logged in through Facebook!")
-//                }
-//                SVProgressHUD.showWithStatus("Buscando dados do Facebook...")
-//                self.loadDataFromFacebook({ (suc:Bool, error:NSError?) -> Void in
-//                    SVProgressHUD.dismiss()
-//                    if error == nil {
-//                        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-//                        let vc = storyboard.instantiateViewControllerWithIdentifier("LeagueVC") as! UINavigationController
-//                        self.presentViewController(vc, animated: true, completion: nil)
-//                    } else {
-//                        print(error)
-//                    }
-//                })
-//            } else {
-//                SVProgressHUD.showErrorWithStatus("Ocorreu um erro ao entrar :( \n \(error?.localizedDescription)")
-//            }
-//        }
+        SVProgressHUD.showWithStatus("Loganu", maskType: SVProgressHUDMaskType.Gradient)
+        let user = PFUser()
+        user.username = "henrique"
+        user.password = "henrique"
+        user.email = "henriqueindalencio@gmail.com"
+        user.signUpInBackgroundWithBlock { (suc:Bool, error:NSError?) -> Void in
+            if error == nil{
+                SVProgressHUD.dismiss()
+                self.performSegueWithIdentifier("gotoApp", sender: nil)
+            }else{
+                if error?.code == PFErrorCode.ErrorUsernameTaken.rawValue{
+                    SVProgressHUD.dismiss()
+                    self.performSegueWithIdentifier("gotoApp", sender: nil)
+                }else{
+                    SVProgressHUD.showErrorWithStatus(error?.localizedDescription, maskType: SVProgressHUDMaskType.Gradient)
+                }
+            }
+        }
+        
+        //        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Gradient)
+        //        SVProgressHUD.showWithStatus("Entrando...")
+        //        let facebookPermissions = ["email", "public_profile", "user_friends"];
+        //        PFFacebookUtils.logInInBackgroundWithReadPermissions(facebookPermissions) { (user: PFUser?, error: NSError?) -> Void in
+        //            if let user = user {
+        //                if user.isNew {
+        //                    print("User signed up and logged in through Facebook!")
+        //                } else {
+        //                    print("User logged in through Facebook!")
+        //                }
+        //                SVProgressHUD.showWithStatus("Buscando dados do Facebook...")
+        //                self.loadDataFromFacebook({ (suc:Bool, error:NSError?) -> Void in
+        //                    SVProgressHUD.dismiss()
+        //                    if error == nil {
+        //                        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        //                        let vc = storyboard.instantiateViewControllerWithIdentifier("LeagueVC") as! UINavigationController
+        //                        self.presentViewController(vc, animated: true, completion: nil)
+        //                    } else {
+        //                        print(error)
+        //                    }
+        //                })
+        //            } else {
+        //                SVProgressHUD.showErrorWithStatus("Ocorreu um erro ao entrar :( \n \(error?.localizedDescription)")
+        //            }
+        //        }
     }
     
     func loadDataFromFacebook(completionBlock:PFBooleanResultBlock){

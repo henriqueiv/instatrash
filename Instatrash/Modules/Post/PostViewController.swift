@@ -61,7 +61,7 @@ class PostViewController: UIViewController {
         let post = Post()
         post.user = PFUser.currentUser()
         post.text = "Va satã!"
-        let data = UIImageJPEGRepresentation(imageView.image!, 0.7)!
+        let data = UIImageJPEGRepresentation(imageView.image!, 0.5)!
         print(data.length)
         let formatter = NSDateFormatter()
         formatter.dateFormat = "YYYY-MM-DDhhmmss"
