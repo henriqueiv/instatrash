@@ -1,5 +1,5 @@
 //
-//  PostsPresenter.swift
+//  TimelinePresenter.swift
 //  Instatrash
 //
 //  Created by William Hass on 9/26/15.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol PostsPresenterDelegate {
+protocol TimelinePresenterDelegate {
     func presenterFinishedLoadingData(numberOfPosts: Int)
 }
 
@@ -16,10 +16,10 @@ enum PostType: Int {
     case Normal
 }
 
-class PostsPresenter {
+class TimelinePresenter {
     
     var postList: [PostType:[AnyObject]] = [PostType:[AnyObject]]()
-    var delegate: PostsPresenterDelegate?
+    var delegate: TimelinePresenterDelegate?
     
     // MARK: Public
     
