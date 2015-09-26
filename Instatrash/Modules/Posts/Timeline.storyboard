@@ -5,16 +5,16 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Posts View Controller-->
+        <!--Timeline-->
         <scene sceneID="rA3-Zl-Hr1">
             <objects>
-                <viewController id="Lls-cN-8xC" customClass="PostsViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Timeline" id="Lls-cN-8xC" customClass="TimelineViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uQj-4u-qof"/>
                         <viewControllerLayoutGuide type="bottom" id="w3L-8J-0zC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UZP-P4-SSR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-Rc-Dir" userLabel="Empty state view">

@@ -1,5 +1,5 @@
 //
-//  PostsViewController.swift
+//  TimelineViewController.swift
 //  Instatrash
 //
 //  Created by William Hass on 9/26/15.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, PostsPresenterDelegate {
+class TimelineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TimelinePresenterDelegate {
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var emptyStateView: UIView!
     let CellReuseIdentifier = "Cell"
-    var presenter: PostsPresenter?
+    var presenter: TimelinePresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class PostsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // MARK: Private Methods
     
     func setupPresenter() {
-        presenter = PostsPresenter()
+        presenter = TimelinePresenter()
         presenter!.delegate = self
         presenter!.loadPosts()
     }

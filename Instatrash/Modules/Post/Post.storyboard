@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Post View Controller-->
+        <!--Post-->
         <scene sceneID="JPb-e5-50D">
             <objects>
-                <viewController id="MDR-Th-gex" customClass="PostViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Post" id="MDR-Th-gex" customClass="PostViewController" customModule="Instatrash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d55-Cq-BE6"/>
                         <viewControllerLayoutGuide type="bottom" id="Qzo-uO-dFy"/>
