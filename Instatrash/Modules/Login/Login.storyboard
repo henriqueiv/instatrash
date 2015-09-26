@@ -4,6 +4,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--AppTabBar-->
+        <scene sceneID="PmI-hF-PKY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AppTabBar" id="UoZ-Fi-O0C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8X-q7-kOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="75"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -20,7 +28,7 @@
                                 <rect key="frame" x="281" y="285" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPq-y9-xSK"/>
+                                    <segue destination="UoZ-Fi-O0C" kind="presentation" id="bC0-jH-EWG"/>
                                 </connections>
                             </button>
                         </subviews>
